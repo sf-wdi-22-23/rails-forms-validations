@@ -2,6 +2,6 @@
 
 <h4>About <%= @pet.name %></h4>
 <ul>
-  <li><%= @pet.name %> belongs to <%= link_to @owner.name, owner_path(@owner) %>
+  <li><%= @pet.name %> belongs to <%= link_to @owner.name, owner_path(@owner) %>. <% if @pet.species %><%= @pet.name %> is a <%= @pet.species %>!<% end %>
   </li>
 </ul>
