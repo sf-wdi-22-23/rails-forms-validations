@@ -1,0 +1,12 @@
+<h2>Hi, <%= @owner.name %></h2>
+
+<h2>Pets</h2>
+<ul>
+  <% if @owner.pets %>
+  <% @owner.pets.each do |pet| %>
+  <li><%= link_to pet.name, owner_pet_path(@owner, pet) %></li>
+  <% end %>
+  <% else %>
+  <p>No owners exist.</p>
+  <% end %>
+</ul>
