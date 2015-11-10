@@ -2,5 +2,6 @@
 
 <h4>About <%= @pet.name %></h4>
 <ul>
-  <li>Some info</li>
+  <li><%= @pet.name %> belongs to <%= link_to @owner.name, owner_path(@owner) %>
+  </li>
 </ul>
