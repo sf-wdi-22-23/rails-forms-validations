@@ -1,6 +1,6 @@
 <h3>Add a new pet</h3>
 <div class='pet-form'>
-  <%= form_for @pet do |f| %>
+  <%= form_for [@owner, @pet] do |f| %>
 
   <% if @pet.errors.any? %>
   <div id="error_explanation">

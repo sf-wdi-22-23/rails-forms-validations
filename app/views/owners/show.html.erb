@@ -1,5 +1,7 @@
 <h2>Hi, <%= @owner.name %></h2>
 
+<%= render partial: 'pets/new' %>
+
 <h2>Pets</h2>
 <ul>
   <% if @owner.pets %>
