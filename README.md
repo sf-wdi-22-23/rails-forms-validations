@@ -74,6 +74,6 @@ If all is right, you should be able to create new pets and associate them with t
 ## Stretch: Make update forms, add more validations
 
 - In either `owners_controller.rb`, create `edit` and `update` methods, the former renders a form to edit the owner, and later handles the `PUT` request.
-- Add new attributes to your models with new migrations using `rails g migration Add<SOMEATTRIBUTE>To<MODELNAME>`. Add validations for these new attributes to in the models files (`owner.rb` and `pet.rb`). For example:
+- Add new attributes to your models with new migrations using `rails g migration Add<SOMEATTRIBUTE>To<MODELNAME>`. Add validations for these new attributes in the models files (`owner.rb` and `pet.rb`). For example:
   - Add a breed attribute to the `Pet` model by creating a new migration. Add a validation for `breed` in your `models/pet.rb` file. Edit your Pet creation form to include the new `breed` attribute.
   - Add a email attribute to the `Owner` model by creating a new migration. Add a validation for `email` in your `models/Owner.rb` file. Validate the email using a [Regular Expression](http://edgeguides.rubyonrails.org/active_record_validations.html#format) Edit your Owner creation form to include the new `email` attribute.
