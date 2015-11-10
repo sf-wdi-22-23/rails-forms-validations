@@ -19,6 +19,10 @@
   <p class="pet-form-title">
     <%= f.label :name %>
     <%= f.text_field :name, class: 'form-control' %>
+    <%= f.label :species, 'Cat' %>
+    <%= f.radio_button :species, 'Cat' %>
+    <%= f.label :species, 'Dog' %>
+    <%= f.radio_button :species, 'Dog' %>
   </p>
 
   <p class="pet-form-submit">
