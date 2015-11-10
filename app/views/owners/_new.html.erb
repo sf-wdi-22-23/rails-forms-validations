@@ -17,7 +17,8 @@
   <% end %>
 
   <p class="owner-form-title">
-    <%= f.text_field :name, placeholder: 'name' %>
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
   </p>
 
   <p class="owner-form-submit">
