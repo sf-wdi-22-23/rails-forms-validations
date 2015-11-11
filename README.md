@@ -10,7 +10,9 @@
 4. Navigate to `localhost:3000` – you should see the Owner's index page.
 
 
-### Pets Controller and Routes
+### Goal: Show me the Pets
+
+**Setting up your Pets Controller and Routes**
 
 1. In `config/routes.rb`, add `resources :pets` to the `resources :owners do ... end` block. This will give you access to all seven RESTful routes for Pets.
   ```ruby
@@ -47,6 +49,8 @@ edit_owner_pet GET    /owners/:owner_id/pets/:id/edit(.:format) pets#edit
 
   ![RESTful routes](./restful-routing-rails.png)
 
+  Read up on [Nested Resources](http://guides.rubyonrails.org/routing.html#nested-resources).
+
 1. Generate a Pets controllers using `rails g controller Pets`. This will create a file like this:
 
   ```ruby
@@ -67,13 +71,17 @@ edit_owner_pet GET    /owners/:owner_id/pets/:id/edit(.:format) pets#edit
     end
   ```
 
-### Making your Pet Form
+### Let's Make a Pet
+
+**Using `form_for` to create your Pet Form**
 
 1. Create a file in your `views/pets` directory called `new.html.erb`.
 2. Use `form_for` to create a form for `@pet`.
 3. Add an errors `<div>` so that an invalid form submission will cause the page to render with the errors displayed.
 
 **NOTE:** If you need a refresher on syntax for `form_for` and the errors, refer to the README for examples or look at `views/owners/new.html.erb`.
+
+But wait, we need a model to use with `form_for`! Let's build one!
 
 
 ### Making Your Pet Model and Migration
