@@ -5,7 +5,7 @@
 ### Set up
 
 1. Clone this repo.
-2. Run `rake db:create` to make your database.
+2. Run `rake db:create` to make your database. *Note:* If you already run into an error where you already have the database, run `rake db:drop` and then create your database again.
 3. Start your app with `rails server`.
 4. Navigate to `localhost:3000` – you should see the Owner's index page.
 
